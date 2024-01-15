@@ -1,3 +1,32 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: arial;
+}
+
+/* header */
+header {
+  background-image: url(./img/header.jpg);
+  color: white;
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* nav */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
 }

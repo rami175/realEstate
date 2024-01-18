@@ -58,10 +58,40 @@ img {
 }
 /*house item  */
 .house-item {
-	background-color: #dedede;
-	width: 400px;
+	background-color: rgb(245, 245, 245);
+	width: 32%;
+	margin-bottom: 10px;
+	border: solid 0.5px rgb(196, 196, 196);
 }
 .price {
 	color: green;
 	font-weight: bold;
+}
+
+.flex-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	/* background-color: chartreuse; */
+}
+.flex-icons li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 25%;
+	/* background-color: blue; */
+}
+
+.details-btn {
+	background-color: rgb(224, 135, 10);
+	width: 100%;
+	border: none;
+	color: rgb(245, 245, 245);
+	margin: 20px 0 10px 0;
+	height: 35px;
+	font-size: medium;
+}
+.flex-add {
+	display: flex;
+	justify-content: space-between;
 }

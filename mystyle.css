@@ -1,4 +1,11 @@
 /* global */
+:root {
+	--primary-color: rgb(224, 135, 10);
+	--secondary: rgb(30, 130, 30);
+}
+html {
+	font-size: 62.5%; /* 10px = 1rem*/
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -9,11 +16,20 @@ body {
 a {
 	text-decoration: none;
 	color: white;
-	margin-left: 15px;
-	margin-right: 15px;
+	/* margin-left: 15px;
+	margin-right: 15px; */
 }
 img {
 	max-width: 100%;
+}
+h2 {
+	text-align: center;
+	margin: 1rem 0;
+	font-size: 2.4rem;
+}
+p {
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 /* utilities */
 .flex-header {
@@ -36,12 +52,19 @@ img {
 	width: 80%;
 	margin: 0 auto;
 }
+.container h3 {
+	min-height: 3.2rem;
+}
 /* header */
 .site-init {
 	background-image: url(./img/header.jpg);
 	color: white;
 	height: 40vh;
 	background-size: cover;
+}
+.site-second {
+	background-color: black;
+	color: white;
 }
 .site-init p {
 	font-size: 20px;
@@ -60,11 +83,11 @@ img {
 .house-item {
 	background-color: rgb(245, 245, 245);
 	width: 32%;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	border: solid 0.5px rgb(196, 196, 196);
 }
 .price {
-	color: green;
+	color: var(--secondary);
 	font-weight: bold;
 }
 
@@ -72,6 +95,8 @@ img {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 	/* background-color: chartreuse; */
 }
 .flex-icons li {
@@ -83,15 +108,43 @@ img {
 }
 
 .details-btn {
-	background-color: rgb(224, 135, 10);
+	background-color: var(--primary-color);
 	width: 100%;
 	border: none;
 	color: rgb(245, 245, 245);
-	margin: 20px 0 10px 0;
-	height: 35px;
+	margin: 2rem 0 1rem 0;
+	height: 3.5rem;
 	font-size: medium;
 }
 .flex-add {
 	display: flex;
 	justify-content: space-between;
+}
+/* contact forms */
+.form-container {
+}
+fieldset {
+	padding: 1rem;
+}
+legend,
+label,
+input {
+	font-size: 1.6rem;
+}
+.input-container {
+	margin: 1rem;
+}
+.input-container input,
+.input-container textarea {
+	width: 70%;
+	background-color: #dedede;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 1rem;
+}
+.input-container label {
+	display: inline-block;
+	width: 10rem;
+	text-align: right;
+	margin-right: 1rem;
 }

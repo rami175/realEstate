@@ -52,6 +52,7 @@ p {
 	width: 80%;
 	margin: 0 auto;
 }
+
 .container h3 {
 	min-height: 3.2rem;
 }
@@ -134,8 +135,12 @@ input {
 .input-container {
 	margin: 1rem;
 }
+.input-container label {
+	font-weight: bold;
+}
 .input-container input,
-.input-container textarea {
+.input-container textarea,
+select {
 	width: 70%;
 	background-color: #dedede;
 	border: none;
@@ -147,4 +152,25 @@ input {
 	width: 10rem;
 	text-align: right;
 	margin-right: 1rem;
+}
+.radio-container {
+	width: 30rem;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+.send-btn {
+	color: white;
+	background-color: rgb(112, 177, 0);
+	margin: 2rem 0 2rem 0;
+	border: none;
+	padding: 1rem;
+}
+fieldset legend {
+	font-weight: bold;
+	color: gray;
+}
+fieldset p {
+	font-size: 1.5rem;
+	color: gray;
 }

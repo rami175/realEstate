@@ -11,6 +11,7 @@
 			<div class="flex-header container">
 				<h1>RealEstate</h1>
 				<nav class="menu">
+					<a href="index.html">Home</a>
 					<a href="#">About</a>
 					<a href="#">Blog</a>
 					<a href="contact.html">Contact</a>
@@ -19,7 +20,7 @@
 		</header>
 		<main class="container">
 			<h2>Contact</h2>
-			<p>Fill the next information</p>
+			<p style="text-align: center">Fill the next information</p>
 
 			<form>
 				<fieldset>
@@ -56,7 +57,51 @@
 						<textarea cols="30" rows="10"></textarea>
 					</div>
 				</fieldset>
+
+				<fieldset>
+					<legend>Product Information</legend>
+					<div class="input-container">
+						<label>Type</label>
+						<select required>
+							<option value="1" selected disabled>
+								---Select an option---
+							</option>
+							<option value="">Condo</option>
+							<option value="">Single house</option>
+							<option value="">Apartment</option>
+							<option value="">Land</option>
+						</select>
+					</div>
+					<div class="input-container">
+						<label>Number</label>
+						<input type="number" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<div class="radio-container">
+						<label>PHONE:</label>
+
+						<input type="radio" />
+						<label>EMAIL:</label>
+						<input type="radio" />
+					</div>
+
+					<p>
+						If you want to be contacted by phone, please select a day and
+						hour:
+					</p>
+					<div class="input-container">
+						<label>DATE:</label>
+						<input type="date" />
+					</div>
+					<div class="input-container">
+						<label>Hour:</label>
+						<input type="time" />
+					</div>
+				</fieldset>
 			</form>
+			<button class="send-btn">Send</button>
 		</main>
 	</body>
 </html>

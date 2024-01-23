@@ -73,12 +73,32 @@ p {
 .menu a {
 	margin: 10px;
 }
+@media (max-width: 768px) {
+	.flex-header {
+		flex-direction: column;
+	}
+	.flex-header-v {
+		height: 20vh;
+		text-align: center;
+	}
+	.site-init {
+		height: 22vh;
+	}
+	.site-init p {
+		font-size: 1.5rem;
+	}
+}
 /* about */
 .flex-about {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+@media (max-width: 768px) {
+	.flex-about {
+		flex-direction: column;
+	}
 }
 /*house item  */
 .house-item {
@@ -120,6 +140,14 @@ p {
 .flex-add {
 	display: flex;
 	justify-content: space-between;
+}
+@media (max-width: 768px) {
+	.flex-add {
+		flex-direction: column;
+	}
+	.flex-add .house-item {
+		width: 100%;
+	}
 }
 /* contact forms */
 .form-container {
